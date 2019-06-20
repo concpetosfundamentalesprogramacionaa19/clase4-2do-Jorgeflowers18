@@ -23,7 +23,7 @@ print("Ingreso de datos de empleado\n")
 try:
     nombre = input("Ingreso su nombre :\n")
     nota1 = input("Ingreso de nota 1 :\n")
-    nota2 = input("Ingreso de nota 2 :\n")
+    nota2 = 0 # input("Ingreso de nota 2 :\n")
     promedio = int(nota1) / int(nota2)
     print("Los datos ingresados son: \nNombre: %s\nNota1: %d \nNota2: %d\
             \nPromedio: %f" % (nombre, int(nota1), int(nota2), promedio))
@@ -35,6 +35,3 @@ except Exception as ex:
     print("Algo paso en el programa (Exeption)\n")
     print(ex)
     print(type(ex))
-    
-
-
